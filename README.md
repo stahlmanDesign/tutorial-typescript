@@ -24,4 +24,3 @@
 	- **IMPORTANT**, now you want to watch not for individual files, but inside folder, to recognize the config file `tsc -w`
 	
 - TS allows you to define a type and set an initializer `let i: number = 12;` (default value)
-- a
