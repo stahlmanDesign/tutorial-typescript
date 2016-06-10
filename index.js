@@ -1,6 +1,5 @@
-var Greeter = (function () {
-    function Greeter() {
-    }
+var Greeter = function () {
+    function Greeter() {}
     // private feedData: Observable<Submission[]>;
     Greeter.prototype.sayHello = function (a) {
         var i = 0;
@@ -9,7 +8,7 @@ var Greeter = (function () {
         }
     };
     return Greeter;
-}());
+}();
 function sortByName(a) {
     var res = a.slice(0);
     res.sort(function (x, y) {

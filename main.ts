@@ -25,6 +25,11 @@ function sortByName(a: Person[]) {
     });
     return res;
 }
+const a = "a"
+function test(val){
+    return val
+}
+test(a);
 
 sortByName([{ Justin: "Joe", age: 42 }]);
 

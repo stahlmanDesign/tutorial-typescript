@@ -1,0 +1,31 @@
+{
+    "name": "typescript-test",
+    "version": "1.0.0",
+    "description": "##Quick start - `npm install` - `tsc -w` - `open index.html` (in another terminal tab) \t- open in localhost if you want live reload to work. I use [serve][0] `npm install serve` which creates <http://localhost:3000> serving the folder where you typed `serve` - You can now modify `main.ts` and it will compile to `main.js`",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/stahlmanDesign/tutorial-typescript.git"
+    },
+    "keywords": [
+        "typescript",
+        "babel"
+    ],
+    "author": "Justin Stahlman <jstahlman@mac.com> (http://www.stahlmandesign.com)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/stahlmanDesign/tutorial-typescript/issues"
+    },
+    "homepage": "https://github.com/stahlmanDesign/tutorial-typescript#readme",
+    "devDependencies": {
+        "babel-cli": "^6.9.0"
+    },
+    "scripts": {
+        "transpile-typescript":"tsc -w",
+        "build": "babel main.js -o index.js -w",
+        "start": "npm run transpile-typescript & npm run build"
+    }
+}
