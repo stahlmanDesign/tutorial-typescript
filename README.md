@@ -2,7 +2,7 @@
 
 ##Quick start
 - `npm install` load modules not included in git repo
-- 
+ 
 - `npm start` to invoke two scripts
 	- `tsc -w` to transpile `main.ts` (TypeScript file) to `main.js` (JavaScript)
 	- `babel main.js -o index.js -w` for babel transpilation of main.js to index.js
