@@ -19,7 +19,8 @@ function sortByName(a) {
 }
 var a = "a";
 function test(val) {
-    return val;
+    var b = (function (val) { return val + "closure"; });
+    return b;
 }
 test(a);
 sortByName([{ Justin: "Joe", age: 42 }]);

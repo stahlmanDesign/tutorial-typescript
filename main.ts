@@ -27,7 +27,8 @@ function sortByName(a: Person[]) {
 }
 const a = "a"
 function test(val){
-    return val
+    let b = ( (val) => val + "closure")
+    return b;
 }
 test(a);
 
