@@ -5,7 +5,7 @@ var Greeter = (function () {
     Greeter.prototype.sayHello = function (a) {
         var i = 0;
         for (i = 0; i < a.length; i++) {
-            document.write(i + " asdfasdf " + a[i] + "<br/>");
+            document.write(i + " hello " + a[i] + "<br/>");
         }
     };
     return Greeter;
@@ -13,7 +13,7 @@ var Greeter = (function () {
 function sortByName(a) {
     var res = a.slice(0);
     res.sort(function (x, y) {
-        return x.Justin.localeCompare(y.Justin);
+        return x.name.localeCompare(y.name);
     });
     return res;
 }
@@ -23,7 +23,7 @@ function test(val) {
     return b;
 }
 test(a);
-sortByName([{ Justin: "Joe", age: 42 }]);
+sortByName([{ name: "Joe", age: 42 }]);
 var gree = new Greeter();
 var myArray = ["toe", "bag", "kid", "space", "gown"];
 gree.sayHello(myArray);

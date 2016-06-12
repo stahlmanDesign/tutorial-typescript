@@ -58,3 +58,4 @@
 ```
 
 - now you can type `npm start` to run both scripts as one command that watches for changes as you modify main.ts
+- EDIT: it is not necessary to use Babel because TypeScript transpiles from TS and from ES6 to ES5

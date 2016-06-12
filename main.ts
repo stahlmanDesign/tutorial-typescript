@@ -1,6 +1,6 @@
 // typescript feature to show what types can be used
 interface Person {
-    Justin: string;
+    name: string;
     age: number;
 }
 interface Thing{
@@ -14,14 +14,14 @@ class Greeter {
     sayHello(a) {
         let i: number = 0;
         for (i = 0; i < a.length; i++){
-        document.write(i + " asdfasdf " + a[i] +"<br/>")
+        document.write(i + " hello " + a[i] +"<br/>")
         }
     }
 }
 function sortByName(a: Person[]) {
     var res = a.slice(0);
     res.sort((x, y) => {
-        return x.Justin.localeCompare(y.Justin);
+        return x.name.localeCompare(y.name);
     });
     return res;
 }
@@ -32,7 +32,7 @@ function test(val){
 }
 test(a);
 
-sortByName([{ Justin: "Joe", age: 42 }]);
+sortByName([{ name: "Joe", age: 42 }]);
 
 var gree = new Greeter()
 
